@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AppEmpresaPortatiles.accesoDatos;
+using AppEmpresaPortatiles.Datos;
 using AppEmpresaPortatiles.Logica;
 using System.Data;
 
@@ -19,6 +19,7 @@ namespace AppEmpresaPortatiles.Usuario
         public RegistroPortatil()
         {
             InitializeComponent();
+            ConsultarPortatil();
         }
 
         private void brnRegPortatil_Click(object sender, EventArgs e)
@@ -76,6 +77,19 @@ namespace AppEmpresaPortatiles.Usuario
         {
             this.Close();
 
+        }
+        private void ConsultarPortatil()
+        {
+            //creamos un dataset
+            DataSet ds = new DataSet();
+            ds = portatil.obtPortatil();
+            dtGridPortatil.DataSource = ds;
+            dtGridPortatil.DataMember = "DTObjetos";
+        }
+
+        private void btnRefPort_Click(object sender, EventArgs e)
+        {
+            ConsultarPortatil();
         }
     }
 }

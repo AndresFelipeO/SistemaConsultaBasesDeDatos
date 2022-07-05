@@ -20,3 +20,19 @@ Begin
       from tblPortatil
       where empNit=v_nit;
 End;
+
+create or replace procedure prcConsultarEmpresas(cr_CantidadEmpresas out SYS_REFCURSOR)
+Is
+Begin
+    open cr_CantidadEmpresas for
+      select empNit as Nit, empNombre as nombre,EMPFECHACREACION as fecha
+      from tblEmpresa;
+End;
+
+create or replace procedure prcConsultarPort(cr_CantidadPortatiles out SYS_REFCURSOR)
+Is
+Begin
+    open cr_CantidadPortatiles for
+      select portNumSerial as Serial, portCapacidadDiscD as Capacidad_Disco,PORTTIPODISDURO as tipo_Disco ,portCapacidadRam as Capacidad_Ram, portMarca as Marca,PORTFECHAENSAMBLAJE as fecha,EMPNIT as nit_empresa
+      from tblPortatil;
+End;

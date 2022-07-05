@@ -17,6 +17,7 @@ namespace AppEmpresaPortatiles.Usuario
         public RegistroEmpresa()
         {
             InitializeComponent();
+            ConsultarEmpresa();
         }
 
         private void btnRegistrarEmp_Click(object sender, EventArgs e)
@@ -48,6 +49,19 @@ namespace AppEmpresaPortatiles.Usuario
         private void btnSalirEmp_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnRefrescar_Click(object sender, EventArgs e)
+        {
+            ConsultarEmpresa();
+        }
+        private void ConsultarEmpresa()
+        {
+            //creamos un dataset
+            DataSet ds = new DataSet();
+            ds = empresa.obtEmpresas();
+            dtGrdEmpresas.DataSource = ds;
+            dtGrdEmpresas.DataMember = "DTObjetos";
         }
     }
 }

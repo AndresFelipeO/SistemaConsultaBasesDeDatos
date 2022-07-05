@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnlMenuLateral = new System.Windows.Forms.Panel();
-            this.pnlSubRegistrar = new System.Windows.Forms.Panel();
-            this.lblMenu = new System.Windows.Forms.Label();
-            this.pnlFormularioHijo = new System.Windows.Forms.Panel();
-            this.lblSegTitulo = new System.Windows.Forms.Label();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.ptbLogo = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnConsulta = new System.Windows.Forms.Button();
+            this.pnlSubRegistrar = new System.Windows.Forms.Panel();
             this.btnPortatil = new System.Windows.Forms.Button();
             this.btnEmpresas = new System.Windows.Forms.Button();
             this.btnRegistar = new System.Windows.Forms.Button();
+            this.lblMenu = new System.Windows.Forms.Label();
+            this.pnlFormularioHijo = new System.Windows.Forms.Panel();
+            this.ptbLogo = new System.Windows.Forms.PictureBox();
+            this.lblSegTitulo = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlMenuLateral.SuspendLayout();
             this.pnlSubRegistrar.SuspendLayout();
             this.pnlFormularioHijo.SuspendLayout();
@@ -61,83 +61,6 @@
             this.pnlMenuLateral.Name = "pnlMenuLateral";
             this.pnlMenuLateral.Size = new System.Drawing.Size(147, 450);
             this.pnlMenuLateral.TabIndex = 0;
-            // 
-            // pnlSubRegistrar
-            // 
-            this.pnlSubRegistrar.BackColor = System.Drawing.Color.LightGray;
-            this.pnlSubRegistrar.Controls.Add(this.btnPortatil);
-            this.pnlSubRegistrar.Controls.Add(this.btnEmpresas);
-            this.pnlSubRegistrar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubRegistrar.Location = new System.Drawing.Point(0, 111);
-            this.pnlSubRegistrar.Name = "pnlSubRegistrar";
-            this.pnlSubRegistrar.Size = new System.Drawing.Size(147, 103);
-            this.pnlSubRegistrar.TabIndex = 5;
-            // 
-            // lblMenu
-            // 
-            this.lblMenu.AutoSize = true;
-            this.lblMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblMenu.Font = new System.Drawing.Font("Berlin Sans FB", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.lblMenu.Location = new System.Drawing.Point(0, 0);
-            this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Padding = new System.Windows.Forms.Padding(30, 10, 0, 20);
-            this.lblMenu.Size = new System.Drawing.Size(115, 64);
-            this.lblMenu.TabIndex = 3;
-            this.lblMenu.Text = "Menu";
-            // 
-            // pnlFormularioHijo
-            // 
-            this.pnlFormularioHijo.BackColor = System.Drawing.Color.Honeydew;
-            this.pnlFormularioHijo.Controls.Add(this.ptbLogo);
-            this.pnlFormularioHijo.Controls.Add(this.lblSegTitulo);
-            this.pnlFormularioHijo.Controls.Add(this.lblTitulo);
-            this.pnlFormularioHijo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlFormularioHijo.Location = new System.Drawing.Point(147, 0);
-            this.pnlFormularioHijo.Name = "pnlFormularioHijo";
-            this.pnlFormularioHijo.Size = new System.Drawing.Size(653, 450);
-            this.pnlFormularioHijo.TabIndex = 1;
-            // 
-            // lblSegTitulo
-            // 
-            this.lblSegTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSegTitulo.AutoSize = true;
-            this.lblSegTitulo.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSegTitulo.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.lblSegTitulo.Location = new System.Drawing.Point(137, 267);
-            this.lblSegTitulo.Name = "lblSegTitulo";
-            this.lblSegTitulo.Size = new System.Drawing.Size(353, 40);
-            this.lblSegTitulo.TabIndex = 10;
-            this.lblSegTitulo.Text = "Empresas y Portatiles";
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Elephant", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.Black;
-            this.lblTitulo.Location = new System.Drawing.Point(136, 57);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(400, 45);
-            this.lblTitulo.TabIndex = 9;
-            this.lblTitulo.Text = "Sistema De Registro";
-            // 
-            // ptbLogo
-            // 
-            this.ptbLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ptbLogo.Image = global::AppEmpresaPortatiles.Properties.Resources.fb7dbdfcb54df47f9d5b8aa62962df8b;
-            this.ptbLogo.Location = new System.Drawing.Point(183, 95);
-            this.ptbLogo.Name = "ptbLogo";
-            this.ptbLogo.Size = new System.Drawing.Size(278, 169);
-            this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbLogo.TabIndex = 8;
-            this.ptbLogo.TabStop = false;
             // 
             // btnSalir
             // 
@@ -178,6 +101,17 @@
             this.btnConsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsulta.UseVisualStyleBackColor = false;
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
+            // 
+            // pnlSubRegistrar
+            // 
+            this.pnlSubRegistrar.BackColor = System.Drawing.Color.LightGray;
+            this.pnlSubRegistrar.Controls.Add(this.btnPortatil);
+            this.pnlSubRegistrar.Controls.Add(this.btnEmpresas);
+            this.pnlSubRegistrar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSubRegistrar.Location = new System.Drawing.Point(0, 111);
+            this.pnlSubRegistrar.Name = "pnlSubRegistrar";
+            this.pnlSubRegistrar.Size = new System.Drawing.Size(147, 103);
+            this.pnlSubRegistrar.TabIndex = 5;
             // 
             // btnPortatil
             // 
@@ -238,6 +172,72 @@
             this.btnRegistar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegistar.UseVisualStyleBackColor = false;
             this.btnRegistar.Click += new System.EventHandler(this.btnRegistar_Click);
+            // 
+            // lblMenu
+            // 
+            this.lblMenu.AutoSize = true;
+            this.lblMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblMenu.Font = new System.Drawing.Font("Berlin Sans FB", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.lblMenu.Location = new System.Drawing.Point(0, 0);
+            this.lblMenu.Name = "lblMenu";
+            this.lblMenu.Padding = new System.Windows.Forms.Padding(30, 10, 0, 20);
+            this.lblMenu.Size = new System.Drawing.Size(115, 64);
+            this.lblMenu.TabIndex = 3;
+            this.lblMenu.Text = "Menu";
+            // 
+            // pnlFormularioHijo
+            // 
+            this.pnlFormularioHijo.BackColor = System.Drawing.Color.Honeydew;
+            this.pnlFormularioHijo.Controls.Add(this.ptbLogo);
+            this.pnlFormularioHijo.Controls.Add(this.lblSegTitulo);
+            this.pnlFormularioHijo.Controls.Add(this.lblTitulo);
+            this.pnlFormularioHijo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlFormularioHijo.Location = new System.Drawing.Point(147, 0);
+            this.pnlFormularioHijo.Name = "pnlFormularioHijo";
+            this.pnlFormularioHijo.Size = new System.Drawing.Size(653, 450);
+            this.pnlFormularioHijo.TabIndex = 1;
+            // 
+            // ptbLogo
+            // 
+            this.ptbLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ptbLogo.Image = global::AppEmpresaPortatiles.Properties.Resources.fb7dbdfcb54df47f9d5b8aa62962df8b;
+            this.ptbLogo.Location = new System.Drawing.Point(183, 95);
+            this.ptbLogo.Name = "ptbLogo";
+            this.ptbLogo.Size = new System.Drawing.Size(278, 169);
+            this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbLogo.TabIndex = 8;
+            this.ptbLogo.TabStop = false;
+            // 
+            // lblSegTitulo
+            // 
+            this.lblSegTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSegTitulo.AutoSize = true;
+            this.lblSegTitulo.Font = new System.Drawing.Font("Berlin Sans FB Demi", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSegTitulo.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.lblSegTitulo.Location = new System.Drawing.Point(137, 267);
+            this.lblSegTitulo.Name = "lblSegTitulo";
+            this.lblSegTitulo.Size = new System.Drawing.Size(353, 40);
+            this.lblSegTitulo.TabIndex = 10;
+            this.lblSegTitulo.Text = "Empresas y Portatiles";
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Elephant", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.Black;
+            this.lblTitulo.Location = new System.Drawing.Point(118, 47);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(400, 45);
+            this.lblTitulo.TabIndex = 9;
+            this.lblTitulo.Text = "Sistema De Registro";
             // 
             // Form1
             // 

@@ -32,11 +32,12 @@ namespace AppEmpresaPortatiles.Usuario
                 return;
             }
            
-            DataSet dsResultado = new DataSet();
-            dsResultado = portatil.ConsultarPortatil(nit);
-            
-            dtGrdTablas.DataSource = dsResultado;
-            dtGrdTablas.DataMember = "ResultadoDatos";
+   
+
+            DataSet ds = new DataSet();
+            ds = portatil.ConsultarPortatil(nit);
+            dtGrdTablas.DataSource = ds;
+            dtGrdTablas.DataMember = "DTObjetos";
         }
 
         private void btnSalirConsul_Click(object sender, EventArgs e)

@@ -49,13 +49,14 @@
             this.ptbLogoPort = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtGridPortatil = new System.Windows.Forms.DataGridView();
             this.lblRam = new System.Windows.Forms.Label();
             this.txtRam = new System.Windows.Forms.TextBox();
+            this.btnRefPort = new System.Windows.Forms.Button();
             this.pnlBoardPortatiles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogoPort)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGridPortatil)).BeginInit();
             this.SuspendLayout();
             // 
             // lblRegPortatil
@@ -169,7 +170,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(119, 329);
+            this.label2.Location = new System.Drawing.Point(115, 316);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
             this.label2.Size = new System.Drawing.Size(152, 48);
@@ -179,7 +180,7 @@
             // dateFechEnsPort
             // 
             this.dateFechEnsPort.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateFechEnsPort.Location = new System.Drawing.Point(273, 337);
+            this.dateFechEnsPort.Location = new System.Drawing.Point(273, 332);
             this.dateFechEnsPort.Name = "dateFechEnsPort";
             this.dateFechEnsPort.Size = new System.Drawing.Size(100, 20);
             this.dateFechEnsPort.TabIndex = 12;
@@ -188,7 +189,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(120, 362);
+            this.label4.Location = new System.Drawing.Point(119, 352);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
             this.label4.Size = new System.Drawing.Size(92, 48);
@@ -197,7 +198,7 @@
             // 
             // txtNitEmpR
             // 
-            this.txtNitEmpR.Location = new System.Drawing.Point(252, 380);
+            this.txtNitEmpR.Location = new System.Drawing.Point(227, 367);
             this.txtNitEmpR.Name = "txtNitEmpR";
             this.txtNitEmpR.Size = new System.Drawing.Size(121, 20);
             this.txtNitEmpR.TabIndex = 17;
@@ -205,7 +206,7 @@
             // brnRegPortatil
             // 
             this.brnRegPortatil.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brnRegPortatil.Location = new System.Drawing.Point(281, 406);
+            this.brnRegPortatil.Location = new System.Drawing.Point(198, 406);
             this.brnRegPortatil.Name = "brnRegPortatil";
             this.brnRegPortatil.Size = new System.Drawing.Size(84, 23);
             this.brnRegPortatil.TabIndex = 18;
@@ -277,7 +278,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dtGridPortatil);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(379, 61);
@@ -286,14 +287,14 @@
             this.panel1.Size = new System.Drawing.Size(277, 389);
             this.panel1.TabIndex = 27;
             // 
-            // dataGridView1
+            // dtGridPortatil
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 57);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(257, 322);
-            this.dataGridView1.TabIndex = 14;
+            this.dtGridPortatil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGridPortatil.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtGridPortatil.Location = new System.Drawing.Point(10, 57);
+            this.dtGridPortatil.Name = "dtGridPortatil";
+            this.dtGridPortatil.Size = new System.Drawing.Size(257, 322);
+            this.dtGridPortatil.TabIndex = 14;
             // 
             // lblRam
             // 
@@ -313,12 +314,24 @@
             this.txtRam.Size = new System.Drawing.Size(60, 20);
             this.txtRam.TabIndex = 29;
             // 
+            // btnRefPort
+            // 
+            this.btnRefPort.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefPort.Location = new System.Drawing.Point(289, 406);
+            this.btnRefPort.Name = "btnRefPort";
+            this.btnRefPort.Size = new System.Drawing.Size(84, 23);
+            this.btnRefPort.TabIndex = 30;
+            this.btnRefPort.Text = "Refrescar";
+            this.btnRefPort.UseVisualStyleBackColor = true;
+            this.btnRefPort.Click += new System.EventHandler(this.btnRefPort_Click);
+            // 
             // RegistroPortatil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(656, 450);
+            this.Controls.Add(this.btnRefPort);
             this.Controls.Add(this.txtRam);
             this.Controls.Add(this.lblRam);
             this.Controls.Add(this.panel1);
@@ -347,7 +360,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogoPort)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGridPortatil)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,8 +388,9 @@
         private System.Windows.Forms.Panel pnlBoardPortatiles;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtGridPortatil;
         private System.Windows.Forms.Label lblRam;
         private System.Windows.Forms.TextBox txtRam;
+        private System.Windows.Forms.Button btnRefPort;
     }
 }

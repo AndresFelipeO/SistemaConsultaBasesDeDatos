@@ -43,7 +43,7 @@
             this.pnlEmpresas = new System.Windows.Forms.Panel();
             this.ptbLogoEmpre = new System.Windows.Forms.PictureBox();
             this.lblFormulario = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRefrescar = new System.Windows.Forms.Button();
             this.pnlBoardEmpresas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtGrdEmpresas)).BeginInit();
             this.pnlEmpresas.SuspendLayout();
@@ -215,15 +215,16 @@
             this.lblFormulario.TabIndex = 28;
             this.lblFormulario.Text = "Formulario";
             // 
-            // button1
+            // btnRefrescar
             // 
-            this.button1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F);
-            this.button1.Location = new System.Drawing.Point(283, 253);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Refrescar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRefrescar.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F);
+            this.btnRefrescar.Location = new System.Drawing.Point(283, 253);
+            this.btnRefrescar.Name = "btnRefrescar";
+            this.btnRefrescar.Size = new System.Drawing.Size(88, 23);
+            this.btnRefrescar.TabIndex = 29;
+            this.btnRefrescar.Text = "Refrescar";
+            this.btnRefrescar.UseVisualStyleBackColor = true;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // RegistroEmpresa
             // 
@@ -231,7 +232,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(656, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRefrescar);
             this.Controls.Add(this.lblFormulario);
             this.Controls.Add(this.pnlEmpresas);
             this.Controls.Add(this.pnlBoardEmpresas);
@@ -274,6 +275,6 @@
         private System.Windows.Forms.DataGridView dtGrdEmpresas;
         private System.Windows.Forms.Panel pnlEmpresas;
         private System.Windows.Forms.Label lblFormulario;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRefrescar;
     }
 }

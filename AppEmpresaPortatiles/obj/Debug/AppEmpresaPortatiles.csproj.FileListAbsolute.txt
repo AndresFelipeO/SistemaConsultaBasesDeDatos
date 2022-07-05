@@ -38,3 +38,17 @@ D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.csproj.Gene
 D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.csproj.CoreCompileInputs.cache
 D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.exe
 D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.pdb
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\bin\Debug\AppEmpresaPortatiles.exe.config
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\bin\Debug\AppEmpresaPortatiles.exe
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\bin\Debug\AppEmpresaPortatiles.pdb
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\bin\Debug\Oracle.DataAccess.dll
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.Form1.resources
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.Properties.Resources.resources
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.Usuario.FormConsulta.resources
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.Usuario.RegistroEmpresa.resources
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.Usuario.RegistroPortatil.resources
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.csproj.GenerateResource.cache
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.csproj.CoreCompileInputs.cache
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.csproj.CopyComplete
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.exe
+D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.pdb
