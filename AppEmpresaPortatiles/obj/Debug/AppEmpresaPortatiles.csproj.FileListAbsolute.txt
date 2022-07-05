@@ -25,3 +25,16 @@ D:\Descargas\AOcampo-MDiaz\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.c
 D:\Descargas\AOcampo-MDiaz\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.csproj.CoreCompileInputs.cache
 D:\Descargas\AOcampo-MDiaz\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.exe
 D:\Descargas\AOcampo-MDiaz\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.pdb
+D:\Descargas\Pry\AppEmpresaPortatiles\bin\Debug\AppEmpresaPortatiles.exe.config
+D:\Descargas\Pry\AppEmpresaPortatiles\bin\Debug\AppEmpresaPortatiles.exe
+D:\Descargas\Pry\AppEmpresaPortatiles\bin\Debug\AppEmpresaPortatiles.pdb
+D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.csproj.AssemblyReference.cache
+D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.Form1.resources
+D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.Properties.Resources.resources
+D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.Usuario.FormConsulta.resources
+D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.Usuario.RegistroEmpresa.resources
+D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.Usuario.RegistroPortatil.resources
+D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.csproj.GenerateResource.cache
+D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.csproj.CoreCompileInputs.cache
+D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.exe
+D:\Descargas\Pry\AppEmpresaPortatiles\obj\Debug\AppEmpresaPortatiles.pdb

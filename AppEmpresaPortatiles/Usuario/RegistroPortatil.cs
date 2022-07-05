@@ -59,7 +59,7 @@ namespace AppEmpresaPortatiles.Usuario
             int serial, nit, resp;
             try
             {
-                serial = int.Parse(txtbSerPortR.Text);
+                //serial = int.Parse(txtbSerPortR.Text);
                 nit = int.Parse(txtNitEmpR.Text);
             }
             catch (Exception)
@@ -69,16 +69,8 @@ namespace AppEmpresaPortatiles.Usuario
             }
 
 
-            resp = portatil.RegistrarPortEmp(serial,nit);
-            if (resp > 0)
-            {
-                MessageBox.Show("Portatil guardado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtbSerPortR.Clear();
-                txtNitEmpR.Clear();
-            }
-            else
-                MessageBox.Show("Portatil no ingresado", "Mesaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
+            //resp = portatil.RegistrarPortEmp(serial,nit);
+           }
 
         private void button1_Click(object sender, EventArgs e)
         {

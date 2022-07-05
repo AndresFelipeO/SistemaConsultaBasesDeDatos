@@ -40,19 +40,22 @@
             this.rdbTipoSolido = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.dateFechEnsPort = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblSerPortR = new System.Windows.Forms.Label();
-            this.txtbSerPortR = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNitEmpR = new System.Windows.Forms.TextBox();
             this.brnRegPortatil = new System.Windows.Forms.Button();
-            this.btnRegEmpPort = new System.Windows.Forms.Button();
             this.btnSalirPort = new System.Windows.Forms.Button();
             this.lblForularioPort = new System.Windows.Forms.Label();
             this.pnlBoardPortatiles = new System.Windows.Forms.Panel();
             this.ptbLogoPort = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblRam = new System.Windows.Forms.Label();
+            this.txtRam = new System.Windows.Forms.TextBox();
             this.pnlBoardPortatiles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogoPort)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblRegPortatil
@@ -166,7 +169,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(120, 286);
+            this.label2.Location = new System.Drawing.Point(119, 329);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
             this.label2.Size = new System.Drawing.Size(152, 48);
@@ -176,46 +179,16 @@
             // dateFechEnsPort
             // 
             this.dateFechEnsPort.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateFechEnsPort.Location = new System.Drawing.Point(273, 299);
+            this.dateFechEnsPort.Location = new System.Drawing.Point(273, 337);
             this.dateFechEnsPort.Name = "dateFechEnsPort";
             this.dateFechEnsPort.Size = new System.Drawing.Size(100, 20);
             this.dateFechEnsPort.TabIndex = 12;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label3.Location = new System.Drawing.Point(340, 80);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(20, 12, 0, 12);
-            this.label3.Size = new System.Drawing.Size(296, 47);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Registrar Portatil A Empresa";
-            // 
-            // lblSerPortR
-            // 
-            this.lblSerPortR.AutoSize = true;
-            this.lblSerPortR.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSerPortR.Location = new System.Drawing.Point(378, 144);
-            this.lblSerPortR.Name = "lblSerPortR";
-            this.lblSerPortR.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
-            this.lblSerPortR.Size = new System.Drawing.Size(103, 48);
-            this.lblSerPortR.TabIndex = 14;
-            this.lblSerPortR.Text = "Serial portatil";
-            // 
-            // txtbSerPortR
-            // 
-            this.txtbSerPortR.Location = new System.Drawing.Point(487, 158);
-            this.txtbSerPortR.Name = "txtbSerPortR";
-            this.txtbSerPortR.Size = new System.Drawing.Size(121, 20);
-            this.txtbSerPortR.TabIndex = 15;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(378, 187);
+            this.label4.Location = new System.Drawing.Point(120, 362);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
             this.label4.Size = new System.Drawing.Size(92, 48);
@@ -224,7 +197,7 @@
             // 
             // txtNitEmpR
             // 
-            this.txtNitEmpR.Location = new System.Drawing.Point(487, 199);
+            this.txtNitEmpR.Location = new System.Drawing.Point(252, 380);
             this.txtNitEmpR.Name = "txtNitEmpR";
             this.txtNitEmpR.Size = new System.Drawing.Size(121, 20);
             this.txtNitEmpR.TabIndex = 17;
@@ -232,24 +205,13 @@
             // brnRegPortatil
             // 
             this.brnRegPortatil.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brnRegPortatil.Location = new System.Drawing.Point(289, 345);
+            this.brnRegPortatil.Location = new System.Drawing.Point(281, 406);
             this.brnRegPortatil.Name = "brnRegPortatil";
             this.brnRegPortatil.Size = new System.Drawing.Size(84, 23);
             this.brnRegPortatil.TabIndex = 18;
             this.brnRegPortatil.Text = "Registrar";
             this.brnRegPortatil.UseVisualStyleBackColor = true;
             this.brnRegPortatil.Click += new System.EventHandler(this.brnRegPortatil_Click);
-            // 
-            // btnRegEmpPort
-            // 
-            this.btnRegEmpPort.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegEmpPort.Location = new System.Drawing.Point(533, 241);
-            this.btnRegEmpPort.Name = "btnRegEmpPort";
-            this.btnRegEmpPort.Size = new System.Drawing.Size(75, 23);
-            this.btnRegEmpPort.TabIndex = 19;
-            this.btnRegEmpPort.Text = "Guardar";
-            this.btnRegEmpPort.UseVisualStyleBackColor = true;
-            this.btnRegEmpPort.Click += new System.EventHandler(this.btnRegEmpPort_Click);
             // 
             // btnSalirPort
             // 
@@ -300,22 +262,72 @@
             this.ptbLogoPort.TabIndex = 21;
             this.ptbLogoPort.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.label3.Location = new System.Drawing.Point(10, 10);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(20, 12, 0, 12);
+            this.label3.Size = new System.Drawing.Size(234, 47);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Portatiles Registrados";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(379, 61);
+            this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(10);
+            this.panel1.Size = new System.Drawing.Size(277, 389);
+            this.panel1.TabIndex = 27;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(10, 57);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(257, 322);
+            this.dataGridView1.TabIndex = 14;
+            // 
+            // lblRam
+            // 
+            this.lblRam.AutoSize = true;
+            this.lblRam.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRam.Location = new System.Drawing.Point(120, 283);
+            this.lblRam.Name = "lblRam";
+            this.lblRam.Padding = new System.Windows.Forms.Padding(0, 15, 0, 15);
+            this.lblRam.Size = new System.Drawing.Size(135, 48);
+            this.lblRam.TabIndex = 28;
+            this.lblRam.Text = "Capacidad de Ram";
+            // 
+            // txtRam
+            // 
+            this.txtRam.Location = new System.Drawing.Point(273, 297);
+            this.txtRam.Name = "txtRam";
+            this.txtRam.Size = new System.Drawing.Size(60, 20);
+            this.txtRam.TabIndex = 29;
+            // 
             // RegistroPortatil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(656, 450);
+            this.Controls.Add(this.txtRam);
+            this.Controls.Add(this.lblRam);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlBoardPortatiles);
             this.Controls.Add(this.lblForularioPort);
             this.Controls.Add(this.ptbLogoPort);
-            this.Controls.Add(this.btnRegEmpPort);
             this.Controls.Add(this.brnRegPortatil);
             this.Controls.Add(this.txtNitEmpR);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtbSerPortR);
-            this.Controls.Add(this.lblSerPortR);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.dateFechEnsPort);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.rdbTipoSolido);
@@ -333,6 +345,9 @@
             this.pnlBoardPortatiles.ResumeLayout(false);
             this.pnlBoardPortatiles.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogoPort)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,16 +366,17 @@
         private System.Windows.Forms.RadioButton rdbTipoSolido;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateFechEnsPort;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblSerPortR;
-        private System.Windows.Forms.TextBox txtbSerPortR;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNitEmpR;
         private System.Windows.Forms.Button brnRegPortatil;
-        private System.Windows.Forms.Button btnRegEmpPort;
         private System.Windows.Forms.Button btnSalirPort;
         private System.Windows.Forms.PictureBox ptbLogoPort;
         private System.Windows.Forms.Label lblForularioPort;
         private System.Windows.Forms.Panel pnlBoardPortatiles;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblRam;
+        private System.Windows.Forms.TextBox txtRam;
     }
 }
