@@ -15,12 +15,22 @@ namespace AppEmpresaPortatiles.Datos
             miConexion.Open();
             //creo un objeto de tipo Comando
             OracleCommand miComando = new OracleCommand("BD2A.prcIngresarEmpresa", miConexion);
-
+            int comando = 0;
             miComando.Parameters.Add("V_NIT", OracleDbType.Int32, nit, ParameterDirection.Input);
             miComando.Parameters.Add("V_NOMEMP", OracleDbType.Varchar2, 30, nom, ParameterDirection.Input);
-            miComando.Parameters.Add("V_FECHA", OracleDbType.Date, fecha, ParameterDirection.Input);
-            miComando.CommandType = CommandType.StoredProcedure;
-            return miComando.ExecuteNonQuery();
+            miComando.Parameters.Add("V_FECHA", OracleDbType.Varchar2, 30,fecha, ParameterDirection.Input);
+            try
+            {
+                miComando.CommandType = CommandType.StoredProcedure;
+                comando = miComando.ExecuteNonQuery();
+            }
+            catch
+            {
+                miConexion.Close();
+                return 0;
+            }
+            miConexion.Close();
+            return comando;
         }
         public DataSet obtenerEmpresas()
         {
@@ -57,8 +67,8 @@ namespace AppEmpresaPortatiles.Datos
             miConexion.Open();
             //creo un objeto de tipo Comando
             OracleCommand miComando = new OracleCommand("BD2A.prcConsultarPortatil", miConexion);
+            miComando.Parameters.Add("V_NIT", OracleDbType.Decimal, nit, ParameterDirection.Input);
             miComando.Parameters.Add("cr_CantidadPortatiles", OracleDbType.RefCursor, ParameterDirection.Output);
-            miComando.Parameters.Add("V_NIT", OracleDbType.Int32, nit, ParameterDirection.Input);
             miComando.CommandType = CommandType.StoredProcedure;
             OracleDataAdapter miAdaptador = new OracleDataAdapter(miComando);
             DataSet ds = new DataSet();
@@ -66,6 +76,33 @@ namespace AppEmpresaPortatiles.Datos
             miConexion.Close();
             return ds;
         }
+        public int registrarPortatilBD(int serial,string marca,float capacidadD,string tipoD,float capacidadR,string fecha,int nit)
+        {
+            //abrimos conexion
+            miConexion.Open();
+            //creo un objeto de tipo Comando
+            OracleCommand miComando = new OracleCommand("BD2A.prcIngresarPortatil", miConexion);
+            int comando = 0;
+            miComando.Parameters.Add("V_SERIAL", OracleDbType.Int32, serial, ParameterDirection.Input);
+            miComando.Parameters.Add("V_MARCA", OracleDbType.Varchar2, 30, marca, ParameterDirection.Input);
+            miComando.Parameters.Add("V_CAPADISCO", OracleDbType.Decimal,capacidadD, ParameterDirection.Input);
+            miComando.Parameters.Add("V_TIPODISC", OracleDbType.Varchar2, 30, tipoD, ParameterDirection.Input);
+            miComando.Parameters.Add("V_CAPRAM", OracleDbType.Decimal, capacidadR, ParameterDirection.Input);
+            miComando.Parameters.Add("V_FECHA", OracleDbType.Varchar2, 30, fecha, ParameterDirection.Input);
+            miComando.Parameters.Add("V_NIT", OracleDbType.Int32, nit, ParameterDirection.Input);
 
+            try
+            {
+                miComando.CommandType = CommandType.StoredProcedure;
+                comando = miComando.ExecuteNonQuery();
+            }
+            catch
+            {
+                miConexion.Close();
+                return 0;
+            }
+            miConexion.Close();
+            return comando;
+        }
     }
 }

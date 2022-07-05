@@ -37,7 +37,7 @@ namespace AppEmpresaPortatiles.Usuario
             }
 
             resp =empresa.IngresarEmpresa(nit, nombreEmp, fechCreacion);
-            if (resp > 0)
+            if (resp == -1)
             {
                 MessageBox.Show("Empresa registrada", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtbNitEmp.Clear();

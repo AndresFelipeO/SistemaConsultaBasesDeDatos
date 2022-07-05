@@ -249,7 +249,7 @@
             this.Controls.Add(this.pnlMenuLateral);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "CompuCampo";
+            this.Text = "CompuRegistro";
             this.pnlMenuLateral.ResumeLayout(false);
             this.pnlMenuLateral.PerformLayout();
             this.pnlSubRegistrar.ResumeLayout(false);

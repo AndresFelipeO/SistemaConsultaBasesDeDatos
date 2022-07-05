@@ -17,16 +17,11 @@ namespace AppEmpresaPortatiles.Logica
         {
             return dt.obtenerPortatil();
         }
-        public int IngresarPortatil(int serial, string marca, int capacidad,string tipo,string fecha)
+        public int IngresarPortatil(int serial, string marca, float capacidad,string tipo,float ram,string fecha,int nit)
         {
-            int resultado=0;
-            return resultado;
+            return dt.registrarPortatilBD(serial,marca,capacidad,tipo,ram,fecha,nit);
         }
-        public int RegistrarPortEmp(int serial, int nit)
-        {
-            int resultado = 0;
-            return resultado;
-        }
+        
         public DataSet ConsultarPortatil(int nit)
         {
             return dt.obtenerPortatilEmpresa(nit);

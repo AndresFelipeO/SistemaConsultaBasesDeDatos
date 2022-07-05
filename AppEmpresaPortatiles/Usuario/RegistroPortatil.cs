@@ -24,14 +24,17 @@ namespace AppEmpresaPortatiles.Usuario
 
         private void brnRegPortatil_Click(object sender, EventArgs e)
         {
-            int serial, capacidad,resp;
+            int serial, nit,resp; 
+            float capacidad,capRam;
             string marca, fechaEnsamblado,tipoDisco;
             try
             {
                 serial = int.Parse(txtbPortSerial.Text);
-                capacidad = int.Parse(txtbCapDisco.Text);
+                capacidad = float.Parse(txtbCapDisco.Text);
+                capRam = float.Parse(txtRam.Text);
                 marca = cbbPortMarca.SelectedItem.ToString();
                 fechaEnsamblado = dateFechEnsPort.Text;
+                nit = int.Parse(txtNitEmpR.Text);
             }
             catch (Exception)
             {
@@ -44,12 +47,14 @@ namespace AppEmpresaPortatiles.Usuario
                 tipoDisco = "Duro";
             else
                 tipoDisco = "Solido";
-            resp = portatil.IngresarPortatil(serial,marca,capacidad,tipoDisco,fechaEnsamblado);
-            if (resp > 0)
+            resp = portatil.IngresarPortatil(serial,marca,capacidad,tipoDisco,capRam,fechaEnsamblado,nit);
+            if (resp == -1)
             {
                 MessageBox.Show("Portatil registrado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtbPortSerial.Clear();
                 txtbCapDisco.Clear();
+                txtRam.Clear();
+                txtNitEmpR.Clear();
             }
             else
                 MessageBox.Show("Portatil no registrado", "Mesaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
