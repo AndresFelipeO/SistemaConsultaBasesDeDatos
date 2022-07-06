@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AppEmpresaPortatiles.Datos;
 using AppEmpresaPortatiles.Logica;
-using System.Data;
 
 namespace AppEmpresaPortatiles.Usuario
 {
@@ -60,24 +59,7 @@ namespace AppEmpresaPortatiles.Usuario
                 MessageBox.Show("Portatil no registrado", "Mesaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void btnRegEmpPort_Click(object sender, EventArgs e)
-        {
-            int serial, nit, resp;
-            try
-            {
-                //serial = int.Parse(txtbSerPortR.Text);
-                nit = int.Parse(txtNitEmpR.Text);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Error! datos inconrrectos", "Mesaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-
-            //resp = portatil.RegistrarPortEmp(serial,nit);
-           }
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -13,3 +13,18 @@ D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\
 D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.exe
 D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.pdb
 D:\Usuario\Documentos\Semestres\5 Semestre\Labo Bases De Datos II\Semestre2\Pry\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\bin\x86\Debug\AppEmpresaPortatiles.exe.config
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\bin\x86\Debug\AppEmpresaPortatiles.exe
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\bin\x86\Debug\AppEmpresaPortatiles.pdb
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\bin\x86\Debug\Oracle.DataAccess.dll
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.Form1.resources
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.Properties.Resources.resources
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.Usuario.FormConsulta.resources
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.Usuario.RegistroEmpresa.resources
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.Usuario.RegistroPortatil.resources
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.csproj.GenerateResource.cache
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.csproj.CopyComplete
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.exe
+C:\Users\andre\OneDrive\Escritorio\x\SistemaConsultaBasesDeDatos\AppEmpresaPortatiles\obj\x86\Debug\AppEmpresaPortatiles.pdb
